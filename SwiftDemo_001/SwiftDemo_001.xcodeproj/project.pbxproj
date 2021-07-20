@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -114,7 +114,7 @@
 		A4591F3126A5801B007A0A9B /* SwiftDemo_001 */ = {
 			isa = PBXGroup;
 			children = (
-				A4591F6226A5805E007A0A9B /* main */,
+				A4591F6226A5805E007A0A9B /* Basic */,
 				A4591F3226A5801B007A0A9B /* AppDelegate.swift */,
 				A4591F3426A5801B007A0A9B /* SceneDelegate.swift */,
 				A4591F3626A5801B007A0A9B /* ViewController.swift */,
@@ -144,11 +144,11 @@
 			path = SwiftDemo_001UITests;
 			sourceTree = "<group>";
 		};
-		A4591F6226A5805E007A0A9B /* main */ = {
+		A4591F6226A5805E007A0A9B /* Basic */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = main;
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		AEE0CCEAE4BBF671F39CF1D8 /* Pods */ = {
@@ -157,7 +157,6 @@
 				09D474C7FDBEA9C60EC5EC03 /* Pods-SwiftDemo_001.debug.xcconfig */,
 				974A63FECC0F4CB9AE3641FE /* Pods-SwiftDemo_001.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

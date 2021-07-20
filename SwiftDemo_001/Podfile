@@ -6,5 +6,8 @@ target 'SwiftDemo_001' do
   use_frameworks!
 
   pod 'SnapKit'
-
+  pod 'QMUIKit'
+  pod 'Alamofire'
+  
 end
+
