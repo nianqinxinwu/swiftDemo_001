@@ -9,6 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy var titleLabel : QMUILabel = {
+        let label = QMUILabel()
+        label.textColor = .darkText
+        label.textAlignment = .left
+        label.font = .systemFont(ofSize: 14)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

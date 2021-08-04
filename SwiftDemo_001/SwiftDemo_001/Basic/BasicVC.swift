@@ -8,7 +8,7 @@
 import UIKit
 //import QMUIKit
 
-class BasicVC: UIViewController {
+class BasicVC : UIViewController {
     private lazy var titleLB : QMUILabel = {
         let titleLabel = QMUILabel()
         titleLabel.textAlignment = .left

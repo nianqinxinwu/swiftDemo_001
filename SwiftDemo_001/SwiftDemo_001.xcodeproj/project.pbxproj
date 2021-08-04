@@ -20,6 +20,7 @@
 		A4591F3F26A5801E007A0A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4591F3D26A5801E007A0A9B /* LaunchScreen.storyboard */; };
 		A4591F4A26A5801E007A0A9B /* SwiftDemo_001Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4591F4926A5801E007A0A9B /* SwiftDemo_001Tests.swift */; };
 		A4591F5526A5801E007A0A9B /* SwiftDemo_001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4591F5426A5801E007A0A9B /* SwiftDemo_001UITests.swift */; };
+		A4CEBDAE26AA59C8004F5DFB /* MetalFile001.metal in Sources */ = {isa = PBXBuildFile; fileRef = A4CEBDAD26AA59C8004F5DFB /* MetalFile001.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A4591F5026A5801E007A0A9B /* SwiftDemo_001UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemo_001UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4591F5426A5801E007A0A9B /* SwiftDemo_001UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemo_001UITests.swift; sourceTree = "<group>"; };
 		A4591F5626A5801E007A0A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CEBDAD26AA59C8004F5DFB /* MetalFile001.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = MetalFile001.metal; path = SwiftDemo_001/Metal/MetalFile001.metal; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				A456BFEF26A7EF1F00146662 /* THMAttendanceTypeMgr.swift */,
+				A4CEBDAD26AA59C8004F5DFB /* MetalFile001.metal */,
 				A456BFEE26A7EF1F00146662 /* THMAttendanceTypeModel.swift */,
 				A456BFE726A7BE3E00146662 /* BasicVC.swift */,
 			);
@@ -366,6 +369,7 @@
 				A4591F3526A5801B007A0A9B /* SceneDelegate.swift in Sources */,
 				A456BFED26A7BE9500146662 /* TestVC.m in Sources */,
 				A456BFE826A7BE3E00146662 /* BasicVC.swift in Sources */,
+				A4CEBDAE26AA59C8004F5DFB /* MetalFile001.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

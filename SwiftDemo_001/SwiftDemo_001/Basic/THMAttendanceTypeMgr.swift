@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import ASLocalized
-import ASUIComponent
+//import ASLocalized
+//import ASUIComponent
 
 class THMAttendanceTypeMgr {
      
@@ -25,7 +25,7 @@ class THMAttendanceTypeMgr {
         return array
     }()
     
-    private var currentCuntryType : ASCountryType = ASLocalized.currentCountryType()
+//    private var currentCuntryType : ASCountryType = ASLocalized.currentCountryType()
     
     private init() {
         setupTHMattendanceArray()
@@ -44,15 +44,15 @@ class THMAttendanceTypeMgr {
         for index in 0...4 {
             switch index {
             case THMAttendanceType.thmPresent.rawValue:
-                model = THMAttendanceTypeModel.init(.thmPresent, title:.as_localizedFor("Present"), titleColor:.as_mainColor, rightImgName:"icon_batch_attendance_manage_present", backgroundColor: .as_lightGreenColor)
+                model = THMAttendanceTypeModel.init(.thmPresent, title:"Present", titleColor:.green, rightImgName:"icon_batch_attendance_manage_present", backgroundColor: .systemGreen)
             case THMAttendanceType.thmLate.rawValue:
-                model = THMAttendanceTypeModel.init(.thmLate, title:.as_localizedFor("Late"), titleColor:.as_orangColor, rightImgName:"icon_batch_attendance_manage_late", backgroundColor: .as_lightOrangColor)
+                model = THMAttendanceTypeModel.init(.thmLate, title:"Late", titleColor:.orange, rightImgName:"icon_batch_attendance_manage_late", backgroundColor: .systemOrange)
             case THMAttendanceType.thmAbsent.rawValue:
-                model = THMAttendanceTypeModel.init(.thmAbsent, title:.as_localizedFor("Absent"), titleColor:.as_warningColor, rightImgName:"icon_batch_attendance_manage_absent", backgroundColor:.as_warningColorLight)
+                model = THMAttendanceTypeModel.init(.thmAbsent, title:"Absent", titleColor:.red, rightImgName:"icon_batch_attendance_manage_absent", backgroundColor:.systemRed)
             case THMAttendanceType.thmExcused.rawValue:
-                model = THMAttendanceTypeModel.init(.thmExcused, title:.as_localizedFor("Excused"), titleColor:.as_tagGaryColor, rightImgName:"icon_batch_attendance_manage_excused", backgroundColor: .as_taglightGaryColor)
+                model = THMAttendanceTypeModel.init(.thmExcused, title:"Excused", titleColor:.gray, rightImgName:"icon_batch_attendance_manage_excused", backgroundColor: .lightGray)
             case THMAttendanceType.thmUnkonwn.rawValue:
-                model = THMAttendanceTypeModel.init(.thmUnkonwn, title: "--   ", titleColor: .as_tagGaryColor, rightImgName: "icon_batch_attendance_manage_excused", backgroundColor: .as_taglightGaryColor)
+                model = THMAttendanceTypeModel.init(.thmUnkonwn, title: "--   ", titleColor: .gray, rightImgName: "icon_batch_attendance_manage_excused", backgroundColor: .lightGray)
             default:
                 print("do Nothing")
             }
@@ -66,17 +66,17 @@ class THMAttendanceTypeMgr {
             
             switch index {
             case THMStuAttendanceType.stuAbsent.rawValue:
-                model = THMAttendanceTypeModel.init(.stuAbsent, title: .as_localizedFor(""), titleColor: .as_warningColor, rightImgName: "", backgroundColor: .as_warningColorLight)
+                model = THMAttendanceTypeModel.init(.stuAbsent, title: "", titleColor: .red, rightImgName: "", backgroundColor: .systemRed)
             case THMStuAttendanceType.stuPresent.rawValue:
-                model = THMAttendanceTypeModel.init(.stuPresent, title: .as_localizedFor(""), titleColor: .as_mainColor, rightImgName: "", backgroundColor: .as_lightGreenColor3)
+                model = THMAttendanceTypeModel.init(.stuPresent, title: "", titleColor: .green, rightImgName: "", backgroundColor: .systemGreen)
             case THMStuAttendanceType.stuLate.rawValue:
-                model = THMAttendanceTypeModel.init(.stuLate, title: .as_localizedFor(""), titleColor: .as_orangColor, rightImgName: "", backgroundColor: .as_lightOrangColor)
+                model = THMAttendanceTypeModel.init(.stuLate, title:"", titleColor: .orange, rightImgName: "", backgroundColor: .systemOrange)
             case THMStuAttendanceType.stuLeaveEarly.rawValue:
-                model = THMAttendanceTypeModel.init(.stuLeaveEarly, title: .as_localizedFor(""), titleColor: .as_yellowColor, rightImgName: "", backgroundColor: .as_yellowColor)
+                model = THMAttendanceTypeModel.init(.stuLeaveEarly, title: "", titleColor: .yellow, rightImgName: "", backgroundColor: .systemYellow)
             case THMStuAttendanceType.stuExcused.rawValue:
-                model = THMAttendanceTypeModel.init(.stuExcused, title: .as_localizedFor(""), titleColor: .as_tagGaryColor, rightImgName: "", backgroundColor: .as_taglightGaryColor)
+                model = THMAttendanceTypeModel.init(.stuExcused, title: "", titleColor: .gray, rightImgName: "", backgroundColor: .lightGray)
             case THMStuAttendanceType.stuNone.rawValue:
-                model = THMAttendanceTypeModel.init(.stuNone, title:"", titleColor: .as_tagGaryColor, rightImgName:"", backgroundColor: .as_taglightGaryColor)
+                model = THMAttendanceTypeModel.init(.stuNone, title:"", titleColor: .gray, rightImgName:"", backgroundColor: .lightGray)
             default:
                 print("do Nothing");
             }
