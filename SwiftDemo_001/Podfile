@@ -8,6 +8,7 @@ target 'SwiftDemo_001' do
   pod 'SnapKit'
   pod 'QMUIKit'
   pod 'Alamofire'
+  pod 'SDWebImage'
   
 end
 
