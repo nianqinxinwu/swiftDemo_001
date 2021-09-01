@@ -47,15 +47,20 @@ class BasicVC : UIViewController {
         self.view.addSubview(contentLabel)
         
         headImg.snp.makeConstraints { make in
-            
+            make.top.equalTo(self.view).offset(15)
+            make.left.equalTo(self.view).offset(16)
+            make.size.equalTo(CGSize(width: 15,height: 15))
         }
         
         titleLB.snp.makeConstraints { make in
-            
+            make.centerY.equalTo(headImg)
+            make.left.equalTo(headImg.snp.right).offset(10)
+            make.right.equalTo(self.view).offset(-16)
         }
         
         contentLabel.snp.makeConstraints { make in
-            
+            make.top.equalTo(titleLB.snp.bottom)
+            make.left.right.equalTo(titleLB)
         }
         
     }

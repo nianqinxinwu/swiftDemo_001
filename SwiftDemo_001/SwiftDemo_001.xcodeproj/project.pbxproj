@@ -20,6 +20,8 @@
 		A4591F3F26A5801E007A0A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4591F3D26A5801E007A0A9B /* LaunchScreen.storyboard */; };
 		A4591F4A26A5801E007A0A9B /* SwiftDemo_001Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4591F4926A5801E007A0A9B /* SwiftDemo_001Tests.swift */; };
 		A4591F5526A5801E007A0A9B /* SwiftDemo_001UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4591F5426A5801E007A0A9B /* SwiftDemo_001UITests.swift */; };
+		A4801F7626DE154300A7800F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4801F7526DE154300A7800F /* CoreFoundation.framework */; };
+		A4801F7826DE157300A7800F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4801F7726DE157300A7800F /* QuartzCore.framework */; };
 		A4CEBDAE26AA59C8004F5DFB /* MetalFile001.metal in Sources */ = {isa = PBXBuildFile; fileRef = A4CEBDAD26AA59C8004F5DFB /* MetalFile001.metal */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,9 @@
 		A4591F5026A5801E007A0A9B /* SwiftDemo_001UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemo_001UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4591F5426A5801E007A0A9B /* SwiftDemo_001UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemo_001UITests.swift; sourceTree = "<group>"; };
 		A4591F5626A5801E007A0A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4801F7426DE153400A7800F /* libswiftCoreFoundation.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreFoundation.tbd; path = usr/lib/swift/libswiftCoreFoundation.tbd; sourceTree = SDKROOT; };
+		A4801F7526DE154300A7800F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A4801F7726DE157300A7800F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A4CEBDAD26AA59C8004F5DFB /* MetalFile001.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = MetalFile001.metal; path = SwiftDemo_001/Metal/MetalFile001.metal; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -72,7 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4801F7626DE154300A7800F /* CoreFoundation.framework in Frameworks */,
 				506FEEEC420F60FBB0EF97D2 /* Pods_SwiftDemo_001.framework in Frameworks */,
+				A4801F7826DE157300A7800F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,9 @@
 		2194ABAA335B009885C44B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4801F7726DE157300A7800F /* QuartzCore.framework */,
+				A4801F7526DE154300A7800F /* CoreFoundation.framework */,
+				A4801F7426DE153400A7800F /* libswiftCoreFoundation.tbd */,
 				3AD83154C7212880AACB9464 /* Pods_SwiftDemo_001.framework */,
 			);
 			name = Frameworks;

@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-SwiftDemo_001/Pods-SwiftDemo_001-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Base64/Base64.framework
+${BUILT_PRODUCTS_DIR}/JWT/JWT.framework
 ${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.4.3)
+  - Base64 (1.1.2)
+  - JWT (2.2.0):
+    - Base64 (~> 1.1.2)
   - QMUIKit (4.2.3):
     - QMUIKit/QMUIComponents (= 4.2.3)
     - QMUIKit/QMUICore (= 4.2.3)
@@ -327,6 +330,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - JWT
   - QMUIKit
   - SDWebImage
   - SnapKit
@@ -334,16 +338,20 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Base64
+    - JWT
     - QMUIKit
     - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  JWT: cf73c0ab0dac762df3de8a3f1164352089d97780
   QMUIKit: c047f987b14be9f48df47cb934a2d21ccd7ef4b6
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 0d8415ed9a474e41cc4e5ce7e88e03272e0cb4db
+PODFILE CHECKSUM: f4650a3c58770ae77f892f90dfe1bf394700c3a9
 
 COCOAPODS: 1.10.1
